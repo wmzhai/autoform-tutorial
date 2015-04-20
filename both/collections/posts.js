@@ -10,4 +10,4 @@ Posts.attachSchema(new SimpleSchema({
     type: String,
     label: "Content"
   }
-}));ne
+}));
