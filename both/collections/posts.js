@@ -9,5 +9,17 @@ Posts.attachSchema(new SimpleSchema({
   content: {
     type: String,
     label: "Content"
+  },
+  category:{
+    type: String,
+    label: "Category",
+    allowedValues: ['business', 'health', 'finance'],
+    autoform:{
+      options:[
+        {label: "Business", value: "business"},
+        {label: "Health", value: "health"},
+        {label: "Finance", value: "finance"}
+      ]
+    }
   }
 }));

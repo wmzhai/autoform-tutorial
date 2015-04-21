@@ -17,13 +17,14 @@
         <fieldset>
             {{> afQuickField name='title'}}
             {{> afQuickField name='content' rows=6}}
+            {{> afQuickField name='category'}}
         </fieldset>
         <button type="submit" class="btn btn-primary">Insert</button>
     {{/autoForm}}
 
     <ul>
         {{#each posts}}
-          <li> <a href="{{pathFor 'post.show'}}">{{title}}</a> - {{content}}</li>
+          <li> <a href="{{pathFor 'post.show'}}">{{title}}</a> - {{content}} - {{category}}</li>
         {{/each}}
     </ul>
 </template>
